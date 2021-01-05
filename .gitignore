@@ -27,3 +27,15 @@ override.tf.json
 
 # Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
 # example: *tfplan*
+
+# Ignore emacs backups
+*~
+
+# Ignore some files which should normally be included in source
+# control, but which we do not want to distribute for this sample
+# project.
+.terraform.lock.hcl
+terraform.tfvars
+
+# Ignore k8s manifests which came from the linked Microsoft demo
+*.yaml
